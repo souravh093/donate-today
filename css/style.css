@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary-color: #FF5959;
+    --fw-bold: 700;
+    --fw-light: 300;
+}
+
+section {
+    margin: 100px 0;
+}
+
+main {
+    padding: 0 15rem;
+}
+
+/* header area styles */
+.header {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.354), rgba(0, 0, 0, 0.319)), url('../images/donation1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header .header-title {
+    font-weight: var(--fw-bold);
+    font-size: 5rem;
+    color: #f7f7f7;
+    text-align: center;
+    line-height: 100px;
+}
+
+.header .header-sub-title {
+    font-size: 24px;
+    white-space: pre;
+    text-align: center;
+    color: #f7f7f7;
+}
+
+.header .header-content > .btn-primary {
+    font-weight: var(--fw-bold);
+    padding: 20px 30px;
+    background: var(--primary-color);
+    font-size: 24px;
+    border: 0;
+    color: #f7f7f7;
+    border-radius: 5px;
+}
+
+/* donate today styles */
+.donate-today {
+    padding: 0 8rem;
+}
+
+.donate-today-title-area {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.donate-today-title-area .donate-today-title {
+    font-weight: var(--fw-bold);
+    font-size: 3rem;
+    color: #474747;
+    text-align: center;
+    margin: 0;
+}
+
+.donate-today-title-area .donate-today-sub-title {
+    text-align: center;
+    font-size: 24px;     
+    margin: 0.5rem 0 5rem 0;
+    color: #474747;
+}
+
+.donate-today-amount {
+    display: flex;
+    justify-content: space-around;
+}
+
+.donate-today-amount .amount-box {
+    
+}
+
