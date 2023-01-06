@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 * {
     margin: 0;
@@ -62,6 +63,7 @@ main {
     border: 0;
     color: #f7f7f7;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 /* donate today styles */
@@ -94,9 +96,200 @@ main {
 .donate-today-amount {
     display: flex;
     justify-content: space-around;
+    margin: 0 0 5rem 0;
 }
 
 .donate-today-amount .amount-box {
-    
+    font-weight: var(--fw-bold);
+    font-size: 2.5rem;
+    color: #474747;
+    padding: 3rem 2rem;
+    background: #FAFAFA;
+    border-radius: 5px;
 }
 
+.donate-today-amount .amount-box:hover {
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.amount-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.amount-input > input, .amount-input > input:focus {
+    border: none;
+    outline: none;
+    font-size: 28px;
+}
+
+.amount-input .horidontal-line {
+    width: 60%;
+    height: 2px;
+    background: #909094;
+    margin: 1rem 0 1.5rem 0;
+}
+
+.amount-input > .btn-primary {
+    font-weight: var(--fw-bold);
+    padding: 20px 30px;
+    background: var(--primary-color);
+    font-size: 24px;
+    border: 0;
+    color: #f7f7f7;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.donate-plan .title-area {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.donate-plan .title-area .donate-today-title {
+    font-weight: var(--fw-bold);
+    font-size: 3rem;
+    color: #474747;
+    text-align: center;
+    margin: 0;
+}
+
+
+.donate-plan .title-area .donate-today-sub-title {
+    text-align: center;
+    font-size: 24px;     
+    margin: 0.5rem 0 5rem 0;
+    color: #474747;
+}
+
+.plan-container {
+    display: flex;
+    gap: 2rem;
+}
+
+.plan-container .plan-box {
+    padding: 4rem 1.5rem;
+    background: #f7f7f7;
+}
+
+.plan-container .plan-box .plan-title {
+    font-weight: var(--fw-bold);
+    font-size: 2rem;
+    margin: 2rem 0;
+    color: #474747;
+}
+
+.plan-container .plan-box .plan-sub-title {
+    font-weight: var(--fw-light);
+    font-size: 20px;
+}
+
+.people-situation {
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.people-situation img {
+    width: 550px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.people-situation .situation-title {
+    font-weight: var(--fw-bold);
+    font-size: 3.5rem;
+    line-height: 4rem;
+    margin-bottom: 1rem;
+}
+
+.people-situation .situation-sub-title {
+    font-weight: normal;
+    font-size: 24px;
+    margin: 0 0 2rem 0;
+}
+
+.people-situation .situation-content > .btn-primary {
+    font-weight: var(--fw-bold);
+    padding: 20px 30px;
+    background: var(--primary-color);
+    font-size: 24px;
+    border: 0;
+    color: #f7f7f7;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.update {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.update .donate-today-title {
+    font-weight: var(--fw-bold);
+    font-size: 3rem;
+    color: #474747;
+    text-align: center;
+    margin: 0;
+}
+
+.update .donate-today-sub-title {
+    text-align: center;
+    font-size: 24px;     
+    margin: 0.5rem 0 5rem 0;
+    color: #474747;
+}
+
+.update .update-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF4D6;
+    padding: 8rem 15rem;
+}
+
+.update .update-form input {
+    padding: 0.9rem;
+    font-size: 24px;
+    background: #D9D9D9;
+    border: 0;
+    outline: 0;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.update .update-form button {
+    font-weight: var(--fw-bold);
+    padding: 15px 40px;
+    background: var(--primary-color);
+    font-size: 24px;
+    border: 0;
+    color: #f7f7f7;
+    cursor: pointer;
+    border-radius: 0px 5px 5px 0px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5rem;
+    background: #000000;
+    color: #f7f7f7;
+    gap: 2rem;
+}
+
+footer .footer-title {
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    color: var(--primary-color);
+}
